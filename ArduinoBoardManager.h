@@ -113,10 +113,10 @@ class ArduinoBoardManager {
   static const unsigned long SRAM_SIZE = 96000;
   static const unsigned long EEPROM_SIZE = 0;
   static const unsigned long FLASH_SIZE = 512000;
-#elif defined(__AVR_Atmega32U4__) // Yun 16Mhz, Micro, Leonardo, Esplora
+#elif defined(__AVR_ATmega32U4__) // Yun 16Mhz, Micro, Leonardo, Esplora
   static const uint8_t BOARD = 0x04;
   static const uint8_t NUM_BITS = 8;
-  static const uint16_t CPU = __AVR_Atmega32U4__;
+  static const uint16_t CPU = __AVR_ATmega32U4__;
   static const unsigned long SRAM_SIZE = 2500;
   static const unsigned long EEPROM_SIZE = 1000;
   static const unsigned long FLASH_SIZE = 32000;
